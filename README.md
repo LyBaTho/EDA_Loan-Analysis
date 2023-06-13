@@ -1,10 +1,11 @@
 # EDA_Loan-Analysis
-Loan Prediction using Python: Exploratory Analysis and Machine Learning
+Title: Exploratory Analysis and Machine Learning for Loan Status Prediction using Python
 
-Loan Prediction using Python is a project that aims to develop an accurate model for predicting loan status. The project involves various techniques such as Exploratory Data Analysis (EDA), data preprocessing (cleaning, transformation, feature selection, encoding), and the utilization of the K-Nearest Neighbors (KNN) machine learning algorithm to assess prediction accuracy.
+Abstract:
+This research project focuses on the development of an accurate loan status prediction model using Python. The study incorporates several techniques, including Exploratory Data Analysis (EDA), comprehensive data preprocessing (including cleaning, transformation, feature selection, and encoding), and the application of the K-Nearest Neighbors (KNN) machine learning algorithm to assess the model's predictive performance.
 
-The selected variables for the prediction model include 'principal', 'terms', 'effective_date', 'due_date', 'education', 'gender', 'age', and 'loan_status'. These variables play a crucial role in assessing the risk and probability of loan repayment.
+The prediction model considers a set of carefully selected variables, namely 'principal', 'terms', 'effective_date', 'due_date', 'education', 'gender', 'age', and 'loan_status'. These variables are pivotal in evaluating the risk and likelihood of successful loan repayment.
 
-The project achieves an approximate prediction accuracy of 98%.
+The experimental results demonstrate a promising prediction accuracy of approximately 98% in loan status classification.
 
-Note: This project uses a small dataset (346 rows, 10 columns). For larger datasets, further investigation into variable relationships and data modeling is highly recommended.
+However, it is important to note that this study is based on a relatively small dataset comprising 346 rows and 10 columns. For larger datasets, it is highly recommended to conduct further investigation into variable relationships and employ advanced data modeling techniques to enhance the accuracy and generalizability of the prediction model.
