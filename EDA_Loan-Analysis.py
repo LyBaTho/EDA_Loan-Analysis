@@ -99,9 +99,9 @@ label_encoder_s1 = preprocessing.LabelEncoder()
 loan['terms_encoder'] = loan['terms'].map(terms_type_mapping)
 loan['terms_encoder'] = label_encoder_s1.fit_transform(loan['terms_encoder'])
 
-  # Scaling terms_encoder by Standardization
+  # Scaling terms_encoder by Normalization
 
-scaler = StandardScaler()
+scaler = MinMaxScaler()
 terms_values = loan['terms_encoder'].values.reshape(-1, 1)
 loan['scaled_std_terms'] = scaler.fit_transform(terms_values)
 
@@ -117,12 +117,11 @@ label_encoder = preprocessing.LabelEncoder()
 loan['principal_encoder'] = loan['principal'].map(principal_type_mapping)
 loan['principal_encoder'] = label_encoder.fit_transform(loan['principal_encoder'])
 
-  # Scaling principal_encoder by Standardization
+  # Scaling principal_encoder by Normalization
 
-scaler = StandardScaler()
+scaler = MinMaxScaler()
 principal_values = loan['principal_encoder'].values.reshape(-1, 1)
 loan['scaled_std_principal'] = scaler.fit_transform(principal_values)
-loan['scaled_std_principal'].unique()
 
   # loan_status (collection: 1, paidoff: 0)
 loan['loan_status_encoder'] = loan['loan_status'].apply(lambda x: 1 if x == 'COLLECTION' else 0)
